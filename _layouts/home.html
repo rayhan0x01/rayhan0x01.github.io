@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<ul>
+  {% for post in site.posts %}
+    <li class="post-container">
+    	<div class="post-holder">
+    		<div class="post-thumb">
+		    	{% if post.thumbnail %}
+				<img src="{{ post.thumbnail }}">
+				{% else %}
+				<img src="/img/default-thumb.webp">
+				{% endif %}
+			</div>
+			<div class="post-contents">
+				<small>{{ post.date | date: "%-d %B %Y" }}</small>
+      			<a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
+      			<p>{{ post.excerpt }}</p>
+      		</div>
+    </li>
+  {% endfor %}
+</ul>

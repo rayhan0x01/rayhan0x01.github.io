@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+{% seo %}
+{% if page.thumbnail %}
+    <meta property="og:image" content="{{ page.thumbnail }}" />
+    {% endif %}
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <a id="a-title" class="a-title-overwrite" href="{{ '/' | relative_url }}">
+          <h1>{{ site.title | default: site.github.repository_name }}</h1>
+        </a>
+        <h2>{{ site.description | default: site.github.project_tagline }}</h2>
+        <div id="social-holder">
+          <a class="social-icons" href="https://www.hackthebox.eu/profile/60115" target="_blank"><img alt="HackTheBox" src="/assets/images/htb.png"></a>
+          <a class="social-icons" href="https://twitter.com/Rayhan0x01" target="_blank"><img alt="Twitter" src="/assets/images/twitter.png"></a>
+          <a class="social-icons" href="https://github.com/rayhan0x01" target="_blank"><img alt="Github" src="/assets/images/github.png"></a>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        {{ content }}
+      </section>
+    </div>
+
+    {% if site.google_analytics %}
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', '{{ site.google_analytics }}', 'auto');
+        ga('send', 'pageview');
+      </script>
+    {% endif %}
+    <footer>
+      <div class="container" id="footer">
+        <a href="/about.html">About</a> | <a href="mailto:rayhan0x01+blog@gmail.com">Contact</a> | <a href="/feed.xml">Feed</a><br>
+      </div>
+    </footer>
+  </body>
+</html>
