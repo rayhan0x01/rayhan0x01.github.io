@@ -191,6 +191,6 @@ while True:
 	arr = [str(random.randint(1,10)),str(random.randint(1,10))]
 	loopwithwhatihave(arr)
 ``` 
-After few minutes, guessed the right number two timesi na row and got the flag.
+After few minutes, guessed the right number two times in a row and got the flag.
 
 This was my first ever participation in a CTF contest. There were 690 teams comprised of 1428 users and I managed to get into 112th place under the given 24 hours playing Solo! I spent way more time solving some hard ones, later solved many more challenges after the qualifiers time for closure and the organizers were very kind to leave the CTF open for us. Decided to start my own blog to document some of my experiences as I hack and learn now and in the future!
