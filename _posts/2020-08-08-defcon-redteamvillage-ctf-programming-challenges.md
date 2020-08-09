@@ -6,7 +6,7 @@ categories: CTF
 thumbnail: /img/tps.webp
 tags: ctf,defcon,redteamvillage
 ---
-In the qualifiers round of Defcon RedTeam Village CTF, there were 8 Jeopardy-style challenges. The highest point was in the "TPS Report System - 2" challenge which only unlocked after solving the first one and had very few solves. 
+In the qualifiers round of Defcon RedTeam Village CTF, there were 8 Jeopardy-style challenges in the Programming section. The highest point was in the "TPS Report System - 2" challenge which only unlocked after solving the first one and had very few solves. 
 
 ## # TPS Report System - 1
 
@@ -17,7 +17,7 @@ Upon connecting to the host via netcat it displayed the above message. After sen
 Enter the Report you would like to print (TPS-XXXX):
 
 ``` 
-Found the right TPS report id by bruteforcing numbers from 0000-9999 via Python3 script using pwntools:
+Found the right TPS report id by brute-forcing numbers from 0000-9999 via Python3 script using `pwntools`:
 ```python
 import sys
 from pwn import *
