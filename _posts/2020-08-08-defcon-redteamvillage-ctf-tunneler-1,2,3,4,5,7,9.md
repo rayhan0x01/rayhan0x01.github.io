@@ -218,7 +218,7 @@ eth2: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
         TX packets 2228547  bytes 168461419 (168.4 MB)
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 ```
-The ip address of the 3rd box belongs to the same subnet as that sama server. Again I used the same plan to deploy my msf binary like last two times and add autoroute so I can access that host.
+The ip address of the 3rd box belongs to the same subnet as that samba server. Again I used the same plan to deploy my msf binary like last two times and add autoroute so I can access that host.
 
 I copied the binary like before on the target host, started listening again on the msfconsole, and ran the binary from second box to receive another msf session. Next from the newly received meterpreter session I again ran the `autoroute` module to add the subnets:
 ```bash
