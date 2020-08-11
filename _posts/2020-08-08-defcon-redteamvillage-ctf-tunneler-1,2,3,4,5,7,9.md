@@ -103,7 +103,7 @@ Now we can login to that internal host using proxychains with ssh:
 ```bash
 proxychains ssh whistler@10.218.176.199
 ```
-First flag was displayed in the welcome message.
+The flag was displayed in the welcome message.
 
 
 ## # 4 Beacons everywhere
