@@ -2,7 +2,7 @@
 ---
 
 @import "{{ site.theme }}";
-
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 .a-title-overwrite{
 	text-shadow:none !important;
 	color:transparent !important;
@@ -75,4 +75,15 @@ footer {
 .post-contents {
   float: right;
   width: 65%;
+}
+
+#about-container p { text-align: center; font-family: 'Lato', sans-serif; }
+
+#about-h1 { font-size: 30px; margin-bottom:0; padding-bottom:0; }
+#about-caption {
+    margin: 0;
+    font-size: 20px;
+}
+#about-description {
+    font-size: 20px;
 }
