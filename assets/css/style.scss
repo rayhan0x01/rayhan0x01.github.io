@@ -87,3 +87,7 @@ footer {
 #about-description {
     font-size: 20px;
 }
+img[src*='#center'] { 
+    display: block;
+    margin: auto;
+}
