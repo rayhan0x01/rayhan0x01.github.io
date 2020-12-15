@@ -2,7 +2,7 @@
 layout: post
 title:  "National Cyber Drill 2020 Forensic challenges writeup"
 date:   2020-12-15
-categories: OSCP
+categories: CTF
 thumbnail: /img/ncd2020.jpg
 tags: ctf,ncd2020,autopsy,forensic
 ---

@@ -2,7 +2,7 @@
 layout: post
 title:  "Popping XSS on a website behind CloudFlare"
 date:   2020-11-08
-categories: OSCP
+categories: CTF
 thumbnail: /img/rude.png
 tags: cloudflare,xss-bypass
 ---
