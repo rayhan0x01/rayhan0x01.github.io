@@ -2,7 +2,7 @@
 layout: post
 title:  "Popping XSS on a website behind CloudFlare"
 date:   2020-11-08
-categories: CTF
+categories: BugBounty
 thumbnail: /img/rude.png
 tags: cloudflare,xss-bypass
 ---
