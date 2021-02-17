@@ -10,7 +10,7 @@ In the qualifiers round of Defcon RedTeam Village CTF, there were 10 Jeopardy-st
 
 
 ## # 1 Bastion
-<img src="/img/tunneler.webp" width="50%"> 
+![tunneler](/img/tunneler.webp#center)
 
 This was the starting point. All we had to do was to connect to any of the SSH host to get started on pivoting. User-Pass was already given.
 ```bash

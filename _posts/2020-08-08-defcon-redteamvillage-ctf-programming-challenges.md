@@ -10,7 +10,7 @@ In the qualifiers round of Defcon RedTeam Village CTF, there were 8 Jeopardy-sty
 
 ## # TPS Report System - 1
 
-<img src="/img/tps.webp" width="50%"> 
+![tps](/img/tps.webp#center)
 
 Upon connecting to the host via netcat it displayed the above message. After sending `1` as input it showed below message:
 ```

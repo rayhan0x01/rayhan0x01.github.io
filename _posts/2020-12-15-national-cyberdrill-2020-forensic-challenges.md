@@ -3,7 +3,7 @@ layout: post
 title:  "National Cyber Drill 2020 Forensic challenges writeup"
 date:   2020-12-15
 categories: CTF
-thumbnail: /img/ncd2020.jpg
+thumbnail: /img/ncd2020.webp
 tags: ctf,ncd2020,autopsy,forensic
 ---
 Two days ago, I collaborated with few students like myself from "The infinity bytes" and participated in the first National Cyber Drill 2020 organized by the Bangladesh Government's e-Government Computer Incident Response Team (BGD e-GOV CIRT) and secured 2nd place against 234 teams.
