@@ -632,7 +632,7 @@ CHTB{pH1sHiNg_w0_m4cr0s???}
 # # Misc
 
 
-## Alien Camp
+## # Alien Camp
 
 This was a classic get question and reply answer back on a socket connection type challenge. When you connect and input "2" you get a list of emojis and their associated values. You then have to answer 500 mathematic equations represented by those emojis. 
 
@@ -696,7 +696,7 @@ CHTB{3v3n_4l13n5_u53_3m0j15_t0_c0mmun1c4t3}
 ```
 
 &nbsp;
-## Input as a Service
+## # Input as a Service
 
 On this challenge, when we give input it gets evaluated by "exec" in Python2, we can confirm this by supplying "\__builtins__":
 
@@ -724,7 +724,7 @@ CHTB{4li3n5_us3_pyth0n2.X?!}
 
 
 &nbsp;
-## Build yourself in
+## # Build yourself in
 
 This challenge is also similar to previous challenge where when we give input it gets evaluated by "exec", but this time the interpreter is Python3 and there is no "\__builtins__". The code gets executed with below command:
 
