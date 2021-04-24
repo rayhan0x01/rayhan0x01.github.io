@@ -145,7 +145,7 @@ CHTB{sw33t_l33t_s3r14lzz_@$#?}
 
 ## # emoji voting
 
-We are given source code of the application, The application is using based on NodeJS and uses SQLite database. we can see on the "challenge/views/database.js" file the "getEmojis" function does not use parametrization before adding user input to SQL query:
+We are given source code of the application, The application is based on NodeJS and uses SQLite database. we can see on the "challenge/views/database.js" file the "getEmojis" function does not use parametrization before adding user input to SQL query:
 
 ![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424053017.png)
 
