@@ -4,11 +4,11 @@ title:  "Automating Blind SQL injection over WebSocket"
 date:   2021-04-02
 categories: CTF
 thumbnail: /img/websocket.webp
-tags: nodejs,websocket,sqli,sqlmap,docker
+tags: nodejs websocket sqli sqlmap docker scripting
 ---
 Recently I have come across several CTF challenges on SQL injection over WebSocket. So I decided to build a vulnerable WebSocket web app for others to practice blind SQL injection over WebSocket. I spent a day building this on NodeJS from scratch which helped me better understand WebSocket implementations. I'll also share a nifty trick to perform SQL injection over WebSocket with SQLMap using an approach similar to tamper scripts.
 
-I have pushed the vulnerable app on GitHub and added few exercises, feel free to complete those to bump your skills on blind SQLi and automation! It's built on docker so you can just clone the repository and spin it up right away, find it here: 
+I have pushed the vulnerable app on GitHub and added few exercises, feel free to complete those to bump your skills on blind SQLi and automation! It's built on docker so you can just clone the repository and spin it up right away, find it here:
 
 [https://github.com/rayhan0x01/nodejs-websocket-sqli](https://github.com/rayhan0x01/nodejs-websocket-sqli)
 

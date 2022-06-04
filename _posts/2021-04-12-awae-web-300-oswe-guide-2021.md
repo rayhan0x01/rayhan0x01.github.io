@@ -4,7 +4,7 @@ title:  "Just another AWAE / WEB-300 / OSWE guide in 2021"
 date:   2021-04-12
 categories: WEB
 thumbnail: /img/oswe.jpg
-tags: web-300,oswe-2021,awae
+tags: web-300 oswe awae oswe-prep certifications
 ---
 
 

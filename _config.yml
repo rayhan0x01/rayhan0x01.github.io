@@ -31,8 +31,12 @@ google_analytics: UA-174977747-1
 
 # Build settings
 theme: jekyll-theme-hacker
+tag_page_layout: tag_page
+tag_page_dir: tag
 plugins:
   - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
 
 repository: rayhan0x01/rayhan0x01.github.io
 # Exclude from processing.

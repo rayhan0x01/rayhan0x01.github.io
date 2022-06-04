@@ -4,7 +4,7 @@ title:  "Discussing common OSCP issues and my tips for the exam! "
 date:   2020-09-28
 categories: OSCP
 thumbnail: /img/oscp.jpg
-tags: ctf,defcon,redteamvillage
+tags: oscp redteam buffer-overflow certifications
 ---
 Hey there! This post is for the folks who want to take on the OSCP exam. Some of the experiences I am sharing here might help you answer some of the questions you might have! If you want to read my OSCP journey, please [have a read at this post](https://medium.com/@rayhan0x01/my-fast-paced-freemium-oscp-journey-26c5ccb2a8a3?sk=87ba9d1c8c27cb0d5cae9db3305169ba)! Here I'll be discussing some of the common issues you might face during the exam, share some of my resources, and tips for someone just starting this journey!
 

@@ -4,7 +4,7 @@ title:  "Defcon RedTeam Village CTF all programming challenges solution"
 date:   2020-08-08
 categories: CTF
 thumbnail: /img/tps.webp
-tags: ctf,defcon,redteamvillage
+tags: ctf defcon redteamvillage scripting write-up
 ---
 In the qualifiers round of Defcon RedTeam Village CTF, there were 8 Jeopardy-style challenges in the Programming section. The highest point was in the "TPS Report System - 2" challenge which only unlocked after solving the first one and had very few solves. 
 

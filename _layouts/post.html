@@ -5,9 +5,27 @@ layout: default
 <small>{{ page.date | date: "%-d %B %Y" }}</small>
 <h1>{{ page.title }}</h1>
 
-
 {{content}}
 
+{% if page.external_url %}
+<p id="notice"></p>
+<script>
+  window.onload = function () {
+    document.getElementById('notice').innerText = 'This is an external post, you will be redirected to the original post shortly ...';
+    location.replace('{{page.external_url}}');
+  }
+</script>
+<noscript>
+  <meta http-equiv="refresh" content="3;url={{post.external_url}}">
+</noscript>
+{% endif %}
+
+<hr>
 {% if page.tags %}
-  <small>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
+<h2 style="display: inline">Tags : </h2><span>[
+    {% for tag in page.tags %}
+      {% capture tag_name %}{{ tag }}{% endcapture %}
+      <a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
+    {% endfor %}
+  ]</span>
 {% endif %}

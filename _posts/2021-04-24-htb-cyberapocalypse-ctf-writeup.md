@@ -4,10 +4,10 @@ title:  "HackTheBox CyberApocalypse CTF 21 write-up"
 date:   2021-04-24
 categories: CTF
 thumbnail: /img/htb-cyberapocalypsectf2021.png#center
-tags: HTB,CyberApocalypseCTF21,web,forensics,misc
+tags: HTB CA-CTF ctf web forensic misc deserialization ysoserial sqli scripting asti lfi xpath-injection blind-xss csp-bypass ssti maldoc olevba py-jail saleae hardware
 ---
 
-We participated in the 5 days long Cyber Apocalypse CTF 21 hosted by HackTheBox and secured 94th place against 4740 teams comprised of 9900 players! I had final exams during this event but it's the first public CTF of HackTheBox! How could I resist? 
+We participated in the 5 days long Cyber Apocalypse CTF 21 hosted by HackTheBox and secured 94th place against 4740 teams comprised of 9900 players! I had final exams during this event but it's the first public CTF of HackTheBox! How could I resist?
 
 ![](/img/2021_04_24_htb_cyberapocalypse_ctf_writeup/20210424083614.png#center)
 

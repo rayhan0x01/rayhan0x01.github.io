@@ -4,7 +4,7 @@ title:  "Defcon RedTeam Village CTF Tunneler 1-5,7,9 Solutions"
 date:   2020-08-08
 categories: CTF
 thumbnail: /img/tunneler.webp
-tags: ctf,defcon,redteamvillage
+tags: ctf defcon redteamvillage meterpreter socks4a proxychains cve-2017-7494 write-up
 ---
 In the qualifiers round of Defcon RedTeam Village CTF, there were 10 Jeopardy-style challenges in the Tunneler section where we had to pivot from one host to another. I was able to solve 7 of them and here's how I did it. 
 

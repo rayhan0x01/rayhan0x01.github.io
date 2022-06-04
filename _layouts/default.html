@@ -5,10 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="icon" href="/img/favicon.png" sizes="any">
+    {% if site.tags == "" %}
+      {% include collecttags.html %}
+    {% endif %}
+    {% if page.external_url %}
+    <link rel="canonical" href="{{ page.external_url }}">
+    {% else %}
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+    {% endif %}
 {% seo %}
 <meta name="google-site-verification" content="XADhY2kHDRxnYk86XPkcc90r7h5R1oIpdk4vC0MsuzE" />
 {% if page.thumbnail %}
     <meta property="og:image" content="{{site.url}}{{ page.thumbnail }}" />
+    {% endif %}
+    {% if page.robots %}
+    <meta name="robots" content="{{page.robots}}">
     {% endif %}
   </head>
 
@@ -20,12 +33,20 @@
           <h1>{{ site.title | default: site.github.repository_name }}</h1>
         </a>
         <h2>{{ site.description | default: site.github.project_tagline }}</h2>
-        <div id="social-holder">
-          <a class="social-icons" href="https://www.linkedin.com/in/rayhan0x01/" target="_blank"><img alt="Linkedin" src="/assets/images/linkedin.png"></a>
-          <a class="social-icons" href="https://www.hackthebox.eu/profile/60115" target="_blank"><img alt="HackTheBox" src="/assets/images/htb.png"></a>
-          <a class="social-icons" href="https://twitter.com/Rayhan0x01" target="_blank"><img alt="Twitter" src="/assets/images/twitter.png"></a>
-          <a class="social-icons" href="https://github.com/rayhan0x01" target="_blank"><img alt="Github" src="/assets/images/github.png"></a>
+        <div class="main-header">
+          <div id="social-holder">
+            <a class="social-icons" href="https://twitter.com/Rayhan0x01" target="_blank"><img alt="Twitter" src="/assets/images/twitter.png"></a>
+            <a class="social-icons" href="https://www.linkedin.com/in/rayhan0x01/" target="_blank"><img alt="Linkedin" src="/assets/images/linkedin.png"></a>
+            <a class="social-icons" href="mailto:rayhan0x01@gmail.com" target="_blank"><img alt="Email" src="/assets/images/email.png"></a>
+            <a class="social-icons" href="https://www.hackthebox.eu/profile/60115" target="_blank"><img alt="HackTheBox" src="/assets/images/htb.png"></a>
+            
+            <a class="social-icons" href="https://github.com/rayhan0x01" target="_blank"><img alt="Github" src="/assets/images/github.png"></a>
+          </div>
+          <div id="page-list">
+            <a href="/about.html" target="_blank">About Me</a> | <a href="/tags.html" target="_blank">Tags Archive</a> | <a href="/feed.xml" target="_blank">Feed</a>
+          </div>
         </div>
+        
       </div>
     </header>
 
@@ -47,7 +68,7 @@
     {% endif %}
     <footer>
       <div class="container" id="footer">
-        <a href="/about.html">About</a> | <a href="mailto:rayhan0x01@gmail.com">Contact</a> | <a href="/feed.xml">Feed</a><br>
+        &lt;/> with 💚 by rayhan0x01
       </div>
     </footer>
   </body>
