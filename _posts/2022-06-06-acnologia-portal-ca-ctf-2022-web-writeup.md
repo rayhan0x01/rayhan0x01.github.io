@@ -5,7 +5,7 @@ external_url: https://www.hackthebox.com/blog/acnologia-portal-ca-ctf-2022-web-w
 external_site: https://www.hackthebox.com
 feed:
   excerpt_only: true
-date: 2022-06-03
+date: 2022-06-06
 categories: CTF
 thumbnail: /img/acnologia-portal.webp#center
 tags: HTB CA-CTF ctf web cookie-forgery blind-xss csrf flask-session pickle-deserialization zip-slip write-up
