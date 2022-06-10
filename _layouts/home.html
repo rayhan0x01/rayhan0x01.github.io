@@ -15,7 +15,7 @@ layout: default
 			</div>
 			{% if post.external_url %}
 			<div class="post-contents">
-				<small>{{ post.date | date: "%-d %B %Y" }} | <a href="{{ post.external_url }}" style="margin-left: 3px;">External Post <img src="/assets/images/link-icon.svg" style="width: 15px; margin-left: 3px"></a></small>
+				<small>{{ post.date | date: "%-d %B %Y" }} | <a href="{{ post.external_url }}" style="margin-left: 3px;">external post - {{post.external_site | replace:'https://',''}} <img src="/assets/images/link-icon.svg" style="width: 15px; margin-left: 3px"></a></small>
       			<a href="{{ post.external_url }}" target="_blank" rel="noopener"><h2>{{ post.title }}</h2></a>
       			<p>{{ post.excerpt }}</p>
       		</div>
