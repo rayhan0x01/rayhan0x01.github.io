@@ -5,10 +5,10 @@ permalink: /about.html
 ---
 
 <div class="about-container">
-	<p class="about-h1">About Rayhan0x01</p>
+	<p class="about-h1">About Me</p>
 	<p class="about-description">
 I'm currently working as an AppSec Content Engineer at <a href="https://www.hackthebox.com/" target="_blank">Hack The Box</a> and one of the CTF Admins at <a href="https://redteamvillage.io/" target="_blank">RedTeamVillage</a>.<br>
-As for hobbies, I love to play chess (even though I'm not good at it), watch web series, and draw minimalistic <a href="https://www.deviantart.com/minimalrayhan" target="_blank">digital arts</a>!<br>
+I love to play chess (even though I'm not good at it), watch web series, and draw minimalistic <a href="https://www.deviantart.com/minimalrayhan" target="_blank">digital arts</a>.<br>
 
 <p class="about-h1">Cybersecurity Training</p>
 <p class="about-description">
@@ -24,8 +24,12 @@ As for hobbies, I love to play chess (even though I'm not good at it), watch web
 	</li>
 </ul>
 
-<p class="about-h1">Community Involvements</p>
+<p class="about-h1">Community CTFs Organized</p>
 <ul>
+    <li>
+    Optiv Source Zero Con CTF 2022<br>
+	<small>Hosted community CTF event during the Optiv Source Zero conference 2022.</small>
+	</li>
 	<li>
     Cactus Con 10 CTF<br>
 	<small>Hosted community CTF event during the CactusCon 10 conference.</small>
@@ -35,7 +39,7 @@ As for hobbies, I love to play chess (even though I'm not good at it), watch web
 	<small>Hosted community CTF event on behalf of RedTeamVillage.</small>
 	</li>
 	<li>
-    Optiv Source Zero Con CTF<br>
+    Optiv Source Zero Con CTF 2021<br>
 	<small>Hosted community CTF event during the Optiv Source Zero conference 2021.</small>
 	</li>
 	<li>
@@ -56,11 +60,10 @@ As for hobbies, I love to play chess (even though I'm not good at it), watch web
 <ul>
 <li>Responsible disclosures at <a href="https://hackerone.com/rayhan0x01" target="_blank">Hackerone <img src="/assets/images/link-icon.svg" style="width: 15px; margin: 0px 3px"></a>
 </li>
-<li>Common Vulnerabilities and Exposures (CVE) Assigned: 
-	<small><a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-21434" target="_blank">CVE-2021-21434 <img src="/assets/images/link-icon.svg" style="width: 15px; margin: 0px 3px"></a></small>
+<li>CVEs Assigned:
+	<small><a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-21434" target="_blank">CVE-2021-21434 <img src="/assets/images/link-icon.svg" style="width: 15px; margin: 0px 3px"></a></small>, <small><a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-36100" target="_blank">CVE-2021-36100 <img src="/assets/images/link-icon.svg" style="width: 15px; margin: 0px 3px"></a></small>
 </li>
-<li>Log4Shell sample vulnerable application <a href="https://github.com/christophetd/log4shell-vulnerable-app" target="_blank">POC <img src="/assets/images/link-icon.svg" style="width: 15px; margin: 0px 3px"></a>
-</li>
+<li>Contributing to open-source projects at <a href="https://github.com/rayhan0x01" target="_blank">GitHub.</a></li>
 </ul>
 <br>
 
