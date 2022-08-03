@@ -63,7 +63,7 @@ I love to play chess (even though I'm not good at it), watch web series, and dra
 <li>CVEs Assigned:
 	<small><a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-21434" target="_blank">CVE-2021-21434 <img src="/assets/images/link-icon.svg" style="width: 15px; margin: 0px 3px"></a></small>, <small><a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-36100" target="_blank">CVE-2021-36100 <img src="/assets/images/link-icon.svg" style="width: 15px; margin: 0px 3px"></a></small>
 </li>
-<li>Contributing to open-source projects at <a href="https://github.com/rayhan0x01" target="_blank">GitHub.</a></li>
+<li>Contributing to open-source projects at <a href="https://github.com/rayhan0x01" target="_blank">GitHub. <img src="/assets/images/link-icon.svg" style="width: 15px; margin: 0px 3px"></a></li>
 </ul>
 <br>
 
