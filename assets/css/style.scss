@@ -28,6 +28,7 @@ a {
 }
 body {
 	background: #111927 !important;
+    color: #dbdce7;
 	font-family: 'Dosis', sans-serif !important;
 	font-size: 20px !important;
 }
@@ -40,6 +41,10 @@ h1, h2, h3, h4, h5, h6 {
 
 header h1 {
     letter-spacing: 1px !important;
+}
+
+header h2 {
+    color: #737d90 !important;
 }
 
 .container > h2 {
