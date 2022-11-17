@@ -38,6 +38,10 @@ I love to play chess (even though I'm not good at it), watch web series, and dra
 <p>My contributions to the CTFs include creating and maintaining the CTF challenges and managing the CTF backend infrastructure.</p>
 <ul>
     <li>
+    RIoT Flag Hunt 2022 CTF<br>
+	<small>Helped organize the community CTF event as part of CTF Community Bangladesh.</small>
+	</li>
+    <li>
     DEF CON 30 RedTeamVillage CTF<br>
 	<small>Hosted community CTF event on behalf of RedTeamVillage.</small>
 	</li>
@@ -59,7 +63,7 @@ I love to play chess (even though I'm not good at it), watch web series, and dra
 	</li>
 	<li>
     RedTeamVillage Mayhem CTF - RSA Sandbox 2021<br>
-	<small>Hosted two CTF events during the RSA Sandbox 2021 conference on behalf of RedTeamVillage. <a href="https://www.rsaconference.com/experts/rayhan-ahmed-niloy" target="_blank">RSA profile <img src="/assets/images/link-icon.svg" style="width: 15px; margin: 0px 3px"></a></small>
+	<small>Hosted two CTF events during the RSA Sandbox 2021 conference on behalf of RedTeamVillage.</small>
 	</li>
 	<li>
     Cactus Con 9 CTF<br>
