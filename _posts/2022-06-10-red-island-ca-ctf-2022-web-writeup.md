@@ -8,7 +8,7 @@ feed:
 date: 2022-06-10
 categories: CTF
 thumbnail: /img/red-island.webp#center
-tags: HTB CA-CTF ctf web ssrf node-libcurl gopher redis cve-2022-0543 write-up
+tags: HTB CA-CTF ctf web ssrf node-libcurl gopher redis cve-2022-0543 rce write-up
 ---
 
 In this write-up, we'll go over the web challenge Red Island, rated as medium difficulty in the Cyber Apocalypse CTF 2022. The solution requires exploiting a Server-Side Request Forgery (SSRF) vulnerability to perform Redis Lua sandbox escape RCE (CVE-2022-0543) with Gopher protocol.
