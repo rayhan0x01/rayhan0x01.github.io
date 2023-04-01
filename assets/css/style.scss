@@ -138,6 +138,22 @@ hr {
   border: 2px solid #62df50;
 }
 
+code.highlighter-rouge {
+	background: #1b2639;
+	border: none !important;
+	margin: 0px 3px !important;;
+	color: #c833a9 !important;
+	font-size: 18px !important;
+}
+
+.highlight { color: #d0d0d0; }
+.highlight .s, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 { color: #52ca40; }
+.highlight .kc, .highlight .kt, .highlight .kd { color: #f05555; }
+.highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv { color: #c833a9; }
+.highlight .nt, .highlight .nn, .highlight .nc, .highlight .no { color: #dfdc2a; }
+
+pre { background: rgb(27, 38, 57); border: none; padding: 15px; font-size: 16px; color: #b5e853; border-radius: 3px; word-wrap: normal; overflow: auto; overflow-y: hidden; }
+
 
 @media (max-width: 600px) {
   #social-holder, #page-list { display: block; }

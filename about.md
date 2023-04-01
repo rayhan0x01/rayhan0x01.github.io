@@ -7,8 +7,8 @@ permalink: /about.html
 <div class="about-container">
 	<p class="about-h1">About Me</p>
 	<p class="about-description">
-I'm currently working as an AppSec Content Engineer at <a href="https://www.hackthebox.com/" target="_blank">Hack The Box</a> and one of the CTF Admins at <a href="https://redteamvillage.io/" target="_blank">RedTeamVillage</a>.<br>
-I love to play chess (even though I'm not good at it), watch web series, and draw minimalistic <a href="https://www.deviantart.com/minimalrayhan" target="_blank">digital arts</a>.<br>
+Young AppSec Engineer with a passion for application security, penetration testing, and vulnerability analysis.
+<br>I'm currently employed as an AppSec Engineer and volunteering as a CTF Admin at <a href="https://redteamvillage.io/" target="_blank">RedTeamVillage</a>.<br>
 
 <p class="about-h1">Training</p>
 <p class="about-description">
@@ -29,14 +29,19 @@ I love to play chess (even though I'm not good at it), watch web series, and dra
 <li>Responsible disclosures at <a href="https://hackerone.com/rayhan0x01" target="_blank">Hackerone <img src="/assets/images/link-icon.svg" style="width: 15px; margin: 0px 3px"></a>
 </li>
 <li>CVEs Assigned:
-	<small><a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-21434" target="_blank">CVE-2021-21434 <img src="/assets/images/link-icon.svg" style="width: 15px; margin: 0px 3px"></a></small>, <small><a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-36100" target="_blank">CVE-2021-36100 <img src="/assets/images/link-icon.svg" style="width: 15px; margin: 0px 3px"></a></small>
+	<small><a href="https://www.cve.org/CVERecord?id=CVE-2021-21434" target="_blank">CVE-2021-21434 <img src="/assets/images/link-icon.svg" style="width: 15px; margin: 0px 3px"></a></small>, <small><a href="https://www.cve.org/CVERecord?id=CVE-2021-36100" target="_blank">CVE-2021-36100 <img src="/assets/images/link-icon.svg" style="width: 15px; margin: 0px 3px"></a></small>, <small><a href="https://www.cve.org/CVERecord?id=CVE-2022-25967" target="_blank">CVE-2021-36100 <img src="/assets/images/link-icon.svg" style="width: 15px; margin: 0px 3px"></a></small>
 </li>
+<li>Providing training materials as outsourced contractor for <a href="https://app.hackthebox.com/profile/60115" target="_blank">Hack The Box. <img src="/assets/images/link-icon.svg" style="width: 15px; margin: 0px 3px"></a></li>
 <li>Contributing to open-source projects at <a href="https://github.com/rayhan0x01" target="_blank">GitHub. <img src="/assets/images/link-icon.svg" style="width: 15px; margin: 0px 3px"></a></li>
 </ul>
 
 <p class="about-h1">Community CTFs Organized</p>
-<p>My contributions to the CTFs include creating and maintaining the CTF challenges and managing the CTF backend infrastructure.</p>
+<p>My contributions to the CTFs include creating and maintaining the CTF challenges and managing the CTF infrastructure.</p>
 <ul>
+    <li>
+        HackerOne Bug Hunt 2023<br>
+        <small>Helped organize a simulated bug bounty competition from Bug Bounty Community Bangladesh.</small>
+	</li>
     <li>
     RIoT Flag Hunt 2022 CTF<br>
 	<small>Helped organize the community CTF event as part of CTF Community Bangladesh.</small>
