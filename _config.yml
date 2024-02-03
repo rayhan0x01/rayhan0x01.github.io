@@ -22,7 +22,7 @@ title: Rayhan0x01's Blog
 email: rayhan0x01@gmail.com
 author: Rayhan0x01
 description: >- # this means to ignore newlines until "baseurl:"
-  AppSec Practitioner &#x7C; Hackish Programmer &#x7C; Penetration Tester
+  DevOps and AppSec Practitioner
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://rayhan0x01.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: rayhan0x01
