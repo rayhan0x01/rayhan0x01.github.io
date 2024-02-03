@@ -15,7 +15,7 @@ Young DevOps Engineer with a passion for application security, software developm
     </li>
     <li>Advisor, <a href="https://theteamphoenix.org/" target="_blank">TheTeamPhoenix <img src="/assets/images/link-icon.svg" style="width: 15px; margin: 0px 3px"></a>
     </li>
-    <li>Advisor, <a href="https://bugbountycommunitybd.com/" target="_blank">Bug Bounty Community Bangladesh <img src="/assets/images/link-icon.svg" style="width: 15px; margin: 0px 3px"></a>
+    <li>Advisor, <a href="https://twitter.com/bbcbd_official" target="_blank">Bug Bounty Community Bangladesh <img src="/assets/images/link-icon.svg" style="width: 15px; margin: 0px 3px"></a>
     </li>
     <li>Advisor, <a href="https://x.com/ctfcommunitybd" target="_blank">CTF Community Bangladesh <img src="/assets/images/link-icon.svg" style="width: 15px; margin: 0px 3px"></a>
     </li>
