@@ -7,11 +7,10 @@ permalink: /about
 <div class="about-container">
 	<p class="about-h1">About Me</p>
 	<p class="about-description">
-Young DevOps Engineer with a passion for application security, software development, and platform engineering..
-<br>Currently employed at <a href="https://threatsims.com/" target="_blank">ThreatSims Inc</a> as Solo DevOps and Product Engineer.<br>
+I specialize in the intersection of engineering, DevOps, and Offensive Security. I’ve built a cybersecurity training platform from the first line of code to its automated cloud infrastructure, managing everything from full-stack development to cloud-driven lab ranges. Beyond architecting systems, I regularly contribute research and hands-on labs to leading cybersecurity training platforms and the global security community.</p>
 <p class="about-h1">Community Involvement</p>
 <ul>
-    <li>CTF Organizer, <a href="https://redteamvillage.io/" target="_blank">RedTeamVillage <img src="/assets/images/link-icon.svg" style="width: 15px; margin: 0px 3px"></a>
+    <li>Organizer, <a href="https://redteamvillage.io/" target="_blank">RedTeamVillage <img src="/assets/images/link-icon.svg" style="width: 15px; margin: 0px 3px"></a>
     </li>
     <li>Advisor, <a href="https://theteamphoenix.org/" target="_blank">TheTeamPhoenix <img src="/assets/images/link-icon.svg" style="width: 15px; margin: 0px 3px"></a>
     </li>
@@ -41,11 +40,11 @@ Young DevOps Engineer with a passion for application security, software developm
 <li>CVEs Assigned:
 	<small><a href="https://www.cve.org/CVERecord?id=CVE-2021-21434" target="_blank">CVE-2021-21434 <img src="/assets/images/link-icon.svg" style="width: 15px; margin: 0px 3px"></a></small>, <small><a href="https://www.cve.org/CVERecord?id=CVE-2021-36100" target="_blank">CVE-2021-36100 <img src="/assets/images/link-icon.svg" style="width: 15px; margin: 0px 3px"></a></small>, <small><a href="https://www.cve.org/CVERecord?id=CVE-2022-25967" target="_blank">CVE-2022-25967 <img src="/assets/images/link-icon.svg" style="width: 15px; margin: 0px 3px"></a></small>
 </li>
-<li>Providing training materials for <a href="https://app.hackthebox.com/profile/60115" target="_blank">Hack The Box. <img src="/assets/images/link-icon.svg" style="width: 15px; margin: 0px 3px"></a></li>
+<li>Providing hands-on labs to <a href="https://app.hackthebox.com/profile/60115" target="_blank">Hack The Box. <img src="/assets/images/link-icon.svg" style="width: 15px; margin: 0px 3px"></a></li>
 <li>Contributing to open-source projects at <a href="https://github.com/rayhan0x01" target="_blank">GitHub. <img src="/assets/images/link-icon.svg" style="width: 15px; margin: 0px 3px"></a></li>
 </ul>
 
 <p class="about-h1">Community CTFs Organized</p>
-<p>Organized more than 15 community CTF events at various national and international conventions including DEFCON. My contributions to the events include creating and maintaining the CTF challenges and managing the CTF infrastructure. 
+<p>Organized more than 20 community CTF events at various national and international conventions including DEFCON. My contributions to the events include creating and maintaining the CTF challenges and managing the CTF infrastructure. 
 </p>
 <br>
