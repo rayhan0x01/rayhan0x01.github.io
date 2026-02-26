@@ -6,8 +6,12 @@ permalink: /about
 
 <div class="about-container">
 	<p class="about-h1">About Me</p>
-	<p class="about-description">
-I specialize in the intersection of engineering, DevOps, and Offensive Security. I’ve built a cybersecurity training platform from the first line of code to its automated cloud infrastructure, managing everything from full-stack development to cloud-driven lab ranges. Beyond architecting systems, I regularly contribute research and hands-on labs to leading cybersecurity training platforms and the global security community.</p>
+	<p class="about-description" style="text-align: center">
+I specialize in the intersection of engineering, DevOps, and Offensive Security. 
+<br><br>
+My prior experiences include building a cybersecurity training platform from the first line of code to its automated cloud infrastructure, and managing everything from full-stack development to cloud-driven lab ranges, battle-tested across 50+ events, serving over 15,000 learners and professionals globally.
+<br><br>
+Beyond architecting systems, I regularly contribute research and hands-on labs to leading cybersecurity training platforms and the global security community.</p>
 <p class="about-h1">Community Involvement</p>
 <ul>
     <li>Organizer, <a href="https://redteamvillage.io/" target="_blank">RedTeamVillage <img src="/assets/images/link-icon.svg" style="width: 15px; margin: 0px 3px"></a>
